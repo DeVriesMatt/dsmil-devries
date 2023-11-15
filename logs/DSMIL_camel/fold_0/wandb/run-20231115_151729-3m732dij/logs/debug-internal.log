@@ -1,0 +1,186 @@
+2023-11-15 15:17:29,056 INFO    StreamThr :1613547 [internal.py:wandb_internal():87] W&B internal server running at pid: 1613547, started at: 2023-11-15 15:17:29.055426
+2023-11-15 15:17:29,058 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: status
+2023-11-15 15:17:29,059 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: status
+2023-11-15 15:17:29,061 DEBUG   SenderThread:1613547 [sender.py:send():303] send: header
+2023-11-15 15:17:29,061 INFO    WriterThread:1613547 [datastore.py:open_for_write():75] open: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/run-3m732dij.wandb
+2023-11-15 15:17:29,062 DEBUG   SenderThread:1613547 [sender.py:send():303] send: run
+2023-11-15 15:17:29,063 INFO    SenderThread:1613547 [sender.py:_maybe_setup_resume():593] checking resume status for None/DSMIL_camel/3m732dij
+2023-11-15 15:17:29,651 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: check_version
+2023-11-15 15:17:29,661 INFO    SenderThread:1613547 [dir_watcher.py:__init__():216] watching files in: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files
+2023-11-15 15:17:29,662 INFO    SenderThread:1613547 [sender.py:_start_run_threads():928] run started: 3m732dij with start time 1700061449.053408
+2023-11-15 15:17:29,662 DEBUG   SenderThread:1613547 [sender.py:send():303] send: summary
+2023-11-15 15:17:29,663 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-11-15 15:17:29,663 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: check_version
+2023-11-15 15:17:29,745 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: run_start
+2023-11-15 15:17:29,754 DEBUG   HandlerThread:1613547 [system_info.py:__init__():31] System info init
+2023-11-15 15:17:29,754 DEBUG   HandlerThread:1613547 [system_info.py:__init__():46] System info init done
+2023-11-15 15:17:29,754 INFO    HandlerThread:1613547 [system_monitor.py:start():150] Starting system monitor
+2023-11-15 15:17:29,754 INFO    SystemMonitor:1613547 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-11-15 15:17:29,754 INFO    HandlerThread:1613547 [system_monitor.py:probe():171] Collecting system info
+2023-11-15 15:17:29,754 INFO    SystemMonitor:1613547 [interfaces.py:start():168] Started cpu
+2023-11-15 15:17:29,755 INFO    SystemMonitor:1613547 [interfaces.py:start():168] Started disk
+2023-11-15 15:17:29,756 INFO    SystemMonitor:1613547 [interfaces.py:start():168] Started gpu
+2023-11-15 15:17:29,756 INFO    SystemMonitor:1613547 [interfaces.py:start():168] Started memory
+2023-11-15 15:17:29,757 INFO    SystemMonitor:1613547 [interfaces.py:start():168] Started network
+2023-11-15 15:17:29,766 DEBUG   HandlerThread:1613547 [system_info.py:probe():195] Probing system
+2023-11-15 15:17:29,767 DEBUG   HandlerThread:1613547 [git.py:repo():40] git repository is invalid
+2023-11-15 15:17:29,767 DEBUG   HandlerThread:1613547 [system_info.py:probe():241] Probing system done
+2023-11-15 15:17:29,767 DEBUG   HandlerThread:1613547 [system_monitor.py:probe():180] {'os': 'Linux-6.2.0-35-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2023-11-15T15:17:29.766837', 'startedAt': '2023-11-15T15:17:29.036631', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train_dsmil.py', 'codePath': 'train_dsmil.py', 'host': '30247CMBDT', 'username': 'mvries', 'executable': '/home/mvries/anaconda3/envs/dcc/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2530.077291666666, 'min': 1200.0, 'max': 4650.0}, 'cpu_freq_per_core': [{'current': 1707.521, 'min': 1200.0, 'max': 4600.0}, {'current': 2990.382, 'min': 1200.0, 'max': 4600.0}, {'current': 2534.227, 'min': 1200.0, 'max': 4600.0}, {'current': 4300.003, 'min': 1200.0, 'max': 4600.0}, {'current': 1200.096, 'min': 1200.0, 'max': 4600.0}, {'current': 1200.081, 'min': 1200.0, 'max': 4700.0}, {'current': 2800.182, 'min': 1200.0, 'max': 4800.0}, {'current': 4300.004, 'min': 1200.0, 'max': 4800.0}, {'current': 1200.005, 'min': 1200.0, 'max': 4600.0}, {'current': 1199.999, 'min': 1200.0, 'max': 4600.0}, {'current': 2600.794, 'min': 1200.0, 'max': 4600.0}, {'current': 4299.962, 'min': 1200.0, 'max': 4700.0}, {'current': 2287.849, 'min': 1200.0, 'max': 4600.0}, {'current': 3128.623, 'min': 1200.0, 'max': 4600.0}, {'current': 2578.87, 'min': 1200.0, 'max': 4600.0}, {'current': 4299.988, 'min': 1200.0, 'max': 4600.0}, {'current': 1200.044, 'min': 1200.0, 'max': 4600.0}, {'current': 1199.965, 'min': 1200.0, 'max': 4700.0}, {'current': 2799.986, 'min': 1200.0, 'max': 4800.0}, {'current': 4301.459, 'min': 1200.0, 'max': 4800.0}, {'current': 1200.236, 'min': 1200.0, 'max': 4600.0}, {'current': 1200.059, 'min': 1200.0, 'max': 4600.0}, {'current': 2428.837, 'min': 1200.0, 'max': 4600.0}, {'current': 4300.316, 'min': 1200.0, 'max': 4700.0}], 'disk': {'total': 937.3305015563965, 'used': 865.6678009033203}, 'gpu': 'Quadro RTX 6000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 6000', 'memory_total': 25769803776}], 'memory': {'total': 125.50212860107422}}
+2023-11-15 15:17:29,767 INFO    HandlerThread:1613547 [system_monitor.py:probe():181] Finished collecting system info
+2023-11-15 15:17:29,767 INFO    HandlerThread:1613547 [system_monitor.py:probe():184] Publishing system info
+2023-11-15 15:17:29,767 DEBUG   HandlerThread:1613547 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-11-15 15:17:29,768 DEBUG   HandlerThread:1613547 [system_info.py:_save_pip():67] Saving pip packages done
+2023-11-15 15:17:29,768 DEBUG   HandlerThread:1613547 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-11-15 15:17:30,665 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_created():275] file/dir created: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/conda-environment.yaml
+2023-11-15 15:17:30,666 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_created():275] file/dir created: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/requirements.txt
+2023-11-15 15:17:30,666 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_created():275] file/dir created: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-summary.json
+2023-11-15 15:17:44,389 DEBUG   HandlerThread:1613547 [system_info.py:_save_conda():86] Saving conda packages done
+2023-11-15 15:17:44,391 INFO    HandlerThread:1613547 [system_monitor.py:probe():186] Finished publishing system info
+2023-11-15 15:17:44,567 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: stop_status
+2023-11-15 15:17:44,568 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: stop_status
+2023-11-15 15:17:44,657 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: partial_history
+2023-11-15 15:17:44,660 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: partial_history
+2023-11-15 15:17:44,671 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: poll_exit
+2023-11-15 15:17:44,673 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/conda-environment.yaml
+2023-11-15 15:17:44,673 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_created():275] file/dir created: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-metadata.json
+2023-11-15 15:17:44,789 DEBUG   SenderThread:1613547 [sender.py:send():303] send: telemetry
+2023-11-15 15:17:44,790 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,790 DEBUG   SenderThread:1613547 [sender.py:send():303] send: telemetry
+2023-11-15 15:17:44,790 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,790 WARNING SenderThread:1613547 [sender.py:send_metric():1127] Seen metric with glob (shouldn't happen)
+2023-11-15 15:17:44,792 DEBUG   SenderThread:1613547 [sender.py:send():303] send: config
+2023-11-15 15:17:44,806 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,807 DEBUG   SenderThread:1613547 [sender.py:send():303] send: history
+2023-11-15 15:17:44,807 DEBUG   SenderThread:1613547 [sender.py:send():303] send: summary
+2023-11-15 15:17:44,810 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-11-15 15:17:44,811 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,811 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,811 DEBUG   SenderThread:1613547 [sender.py:send():303] send: metric
+2023-11-15 15:17:44,811 DEBUG   SenderThread:1613547 [sender.py:send():303] send: history
+2023-11-15 15:17:44,811 DEBUG   SenderThread:1613547 [sender.py:send():303] send: summary
+2023-11-15 15:17:44,812 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-11-15 15:17:44,813 DEBUG   SenderThread:1613547 [sender.py:send():303] send: exit
+2023-11-15 15:17:44,813 INFO    SenderThread:1613547 [sender.py:send_exit():442] handling exit code: 1
+2023-11-15 15:17:44,813 INFO    SenderThread:1613547 [sender.py:send_exit():444] handling runtime: 14
+2023-11-15 15:17:44,813 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-11-15 15:17:44,814 INFO    SenderThread:1613547 [sender.py:send_exit():450] send defer
+2023-11-15 15:17:44,814 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: poll_exit
+2023-11-15 15:17:44,814 DEBUG   SenderThread:1613547 [sender.py:send():303] send: files
+2023-11-15 15:17:44,814 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-11-15 15:17:44,815 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,816 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 0
+2023-11-15 15:17:44,816 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,816 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-11-15 15:17:44,816 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 1
+2023-11-15 15:17:44,817 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,817 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 1
+2023-11-15 15:17:44,817 INFO    HandlerThread:1613547 [system_monitor.py:finish():160] Stopping system monitor
+2023-11-15 15:17:44,820 DEBUG   SystemMonitor:1613547 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-11-15 15:17:44,821 DEBUG   SystemMonitor:1613547 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-11-15 15:17:44,821 INFO    HandlerThread:1613547 [interfaces.py:finish():175] Joined cpu
+2023-11-15 15:17:44,821 DEBUG   SystemMonitor:1613547 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-11-15 15:17:44,822 INFO    HandlerThread:1613547 [interfaces.py:finish():175] Joined disk
+2023-11-15 15:17:44,901 INFO    HandlerThread:1613547 [interfaces.py:finish():175] Joined gpu
+2023-11-15 15:17:44,901 INFO    HandlerThread:1613547 [interfaces.py:finish():175] Joined memory
+2023-11-15 15:17:44,901 INFO    HandlerThread:1613547 [interfaces.py:finish():175] Joined network
+2023-11-15 15:17:44,901 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,902 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-11-15 15:17:44,902 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 2
+2023-11-15 15:17:44,902 DEBUG   SenderThread:1613547 [sender.py:send():303] send: stats
+2023-11-15 15:17:44,903 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,903 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 2
+2023-11-15 15:17:44,903 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,903 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-11-15 15:17:44,903 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 3
+2023-11-15 15:17:44,904 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,904 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 3
+2023-11-15 15:17:44,904 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,904 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-11-15 15:17:44,904 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 4
+2023-11-15 15:17:44,904 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,905 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 4
+2023-11-15 15:17:44,905 DEBUG   SenderThread:1613547 [sender.py:send():303] send: summary
+2023-11-15 15:17:44,905 INFO    SenderThread:1613547 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-11-15 15:17:44,906 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,906 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-11-15 15:17:44,906 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 5
+2023-11-15 15:17:44,906 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:44,906 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 5
+2023-11-15 15:17:44,906 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:44,906 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-11-15 15:17:45,101 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 6
+2023-11-15 15:17:45,101 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:45,102 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 6
+2023-11-15 15:17:45,102 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:45,102 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-11-15 15:17:45,237 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: keepalive
+2023-11-15 15:17:45,286 INFO    Thread-16 :1613547 [upload_job.py:push():143] Uploaded file /tmp/tmpeccffr5ywandb/2fms1fnm-wandb-metadata.json
+2023-11-15 15:17:45,673 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/config.yaml
+2023-11-15 15:17:45,674 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-summary.json
+2023-11-15 15:17:45,674 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_created():275] file/dir created: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/output.log
+2023-11-15 15:17:47,675 INFO    Thread-13 :1613547 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/output.log
+2023-11-15 15:17:48,820 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 7
+2023-11-15 15:17:48,821 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:48,821 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 7
+2023-11-15 15:17:48,822 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:48,822 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-11-15 15:17:48,822 INFO    SenderThread:1613547 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-11-15 15:17:49,676 INFO    SenderThread:1613547 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/output.log
+2023-11-15 15:17:49,676 INFO    SenderThread:1613547 [dir_watcher.py:finish():392] scan: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files
+2023-11-15 15:17:49,676 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/requirements.txt requirements.txt
+2023-11-15 15:17:49,676 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/output.log output.log
+2023-11-15 15:17:49,679 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-summary.json wandb-summary.json
+2023-11-15 15:17:49,682 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/config.yaml config.yaml
+2023-11-15 15:17:49,686 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/conda-environment.yaml conda-environment.yaml
+2023-11-15 15:17:49,692 INFO    SenderThread:1613547 [dir_watcher.py:finish():406] scan save: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-metadata.json wandb-metadata.json
+2023-11-15 15:17:49,693 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 8
+2023-11-15 15:17:49,696 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:49,697 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 8
+2023-11-15 15:17:49,697 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:49,697 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-11-15 15:17:49,697 INFO    SenderThread:1613547 [file_pusher.py:finish():168] shutting down file pusher
+2023-11-15 15:17:50,152 INFO    Thread-20 :1613547 [upload_job.py:push():143] Uploaded file ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/config.yaml
+2023-11-15 15:17:50,153 INFO    Thread-18 :1613547 [upload_job.py:push():143] Uploaded file ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/output.log
+2023-11-15 15:17:50,176 INFO    Thread-17 :1613547 [upload_job.py:push():143] Uploaded file ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/requirements.txt
+2023-11-15 15:17:50,184 INFO    Thread-19 :1613547 [upload_job.py:push():143] Uploaded file ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/wandb-summary.json
+2023-11-15 15:17:50,192 INFO    Thread-21 :1613547 [upload_job.py:push():143] Uploaded file ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/files/conda-environment.yaml
+2023-11-15 15:17:50,239 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: keepalive
+2023-11-15 15:17:50,392 INFO    Thread-12 :1613547 [sender.py:transition_state():463] send defer: 9
+2023-11-15 15:17:50,393 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:50,393 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 9
+2023-11-15 15:17:50,393 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:50,393 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-11-15 15:17:50,393 INFO    SenderThread:1613547 [file_pusher.py:join():173] waiting for file pusher
+2023-11-15 15:17:50,393 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 10
+2023-11-15 15:17:50,394 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:50,394 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 10
+2023-11-15 15:17:50,394 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:50,394 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-11-15 15:17:50,564 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 11
+2023-11-15 15:17:50,564 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:50,565 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 11
+2023-11-15 15:17:50,565 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:50,565 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-11-15 15:17:50,565 INFO    SenderThread:1613547 [sender.py:transition_state():463] send defer: 12
+2023-11-15 15:17:50,566 DEBUG   SenderThread:1613547 [sender.py:send():303] send: final
+2023-11-15 15:17:50,566 DEBUG   SenderThread:1613547 [sender.py:send():303] send: footer
+2023-11-15 15:17:50,566 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: defer
+2023-11-15 15:17:50,567 INFO    HandlerThread:1613547 [handler.py:handle_request_defer():162] handle defer: 12
+2023-11-15 15:17:50,567 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: defer
+2023-11-15 15:17:50,567 INFO    SenderThread:1613547 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-11-15 15:17:50,568 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: poll_exit
+2023-11-15 15:17:50,568 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: poll_exit
+2023-11-15 15:17:50,570 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: server_info
+2023-11-15 15:17:50,570 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: get_summary
+2023-11-15 15:17:50,570 DEBUG   SenderThread:1613547 [sender.py:send_request():317] send_request: server_info
+2023-11-15 15:17:50,571 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: sampled_history
+2023-11-15 15:17:50,858 INFO    MainThread:1613547 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-11-15 15:17:50,858 INFO    MainThread:1613547 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-11-15 15:17:50,858 INFO    MainThread:1613547 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-11-15 15:17:50,859 DEBUG   HandlerThread:1613547 [handler.py:handle_request():139] handle_request: shutdown
+2023-11-15 15:17:50,859 INFO    HandlerThread:1613547 [handler.py:finish():814] shutting down handler
+2023-11-15 15:17:51,567 INFO    WriterThread:1613547 [datastore.py:close():279] close: ./logs/DSMIL_camel/fold_0/wandb/run-20231115_151729-3m732dij/run-3m732dij.wandb
+2023-11-15 15:17:51,857 INFO    SenderThread:1613547 [sender.py:finish():1331] shutting down sender
+2023-11-15 15:17:51,857 INFO    SenderThread:1613547 [file_pusher.py:finish():168] shutting down file pusher
+2023-11-15 15:17:51,858 INFO    SenderThread:1613547 [file_pusher.py:join():173] waiting for file pusher
+2023-11-15 15:17:51,861 INFO    MainThread:1613547 [internal.py:handle_exit():77] Internal process exited

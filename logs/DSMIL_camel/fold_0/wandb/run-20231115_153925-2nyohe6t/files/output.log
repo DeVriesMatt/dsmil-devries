@@ -1,0 +1,84 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name             | Type              | Params
+-------------------------------------------------------
+0 | criterion        | BCEWithLogitsLoss | 0
+1 | model            | MILNet            | 83.2 K
+2 | acc              | BinaryAccuracy    | 0
+3 | auc              | BinaryAUROC       | 0
+4 | F1               | BinaryF1Score     | 0
+5 | precision_metric | BinaryPrecision   | 0
+6 | recall           | BinaryRecall      | 0
+7 | train_metrics    | MetricCollection  | 0
+8 | valid_metrics    | MetricCollection  | 0
+9 | test_metrics     | MetricCollection  | 0
+-------------------------------------------------------
+83.2 K    Trainable params
+0         Non-trainable params
+83.2 K    Total params
+0.333     Total estimated model params size (MB)
+Metric val_loss improved. New best score: 0.779
+Epoch 0: 100%|█████████████████████████████████████████████████| 270/270 [00:05<00:00, 51.43it/s, loss=0.719, v_num=he6t, train_acc_step=0.000]class 0: acc 0.0, correct 0/142
+class 1: acc 1.0, correct 128/128██████████████████████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 98.62it/s]
+Epoch 1: 100%|█| 270/270 [00:05<00:00, 51.76it/s, loss=0.694, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_loclass 0: acc 0.0, correct 0/135
+class 1: acc 1.0, correct 135/135██████████████████████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 95.21it/s]
+Epoch 2:  11%| | 30/270 [00:00<00:07, 30.18it/s, loss=0.7, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_loss=
+
+Epoch 2:  84%|▊| 227/270 [00:04<00:00, 48.24it/s, loss=0.684, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+class 1: acc 0.9916666666666667, correct 119/120███████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 77.76it/s]
+Epoch 3:  18%|▏| 48/270 [00:01<00:06, 31.73it/s, loss=0.702, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.389, val_los
+
+Epoch 3:  92%|▉| 248/270 [00:05<00:00, 47.52it/s, loss=0.687, v_num=he6t, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+Validation DataLoader 0:  61%|█████████████████████████████████████████████████▌                               | 33/54 [00:00<00:00, 85.13it/s]
+class 1: acc 0.9761904761904762, correct 123/126███████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 76.86it/s]
+
+Epoch 4: 100%|█| 270/270 [00:05<00:00, 50.57it/s, loss=0.674, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.370, val_loclass 0: acc 0.0, correct 0/127
+class 1: acc 0.993006993006993, correct 142/143████████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 90.19it/s]
+
+Epoch 5:  80%|▊| 216/270 [00:04<00:01, 52.73it/s, loss=0.684, v_num=he6t, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+class 1: acc 0.9925373134328358, correct 133/134███████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 86.30it/s]
+
+Epoch 6:  99%|▉| 268/270 [00:05<00:00, 50.02it/s, loss=0.658, v_num=he6t, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+class 1: acc 1.0, correct 138/138██████████████████████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 81.54it/s]
+
+Epoch 7:  77%|▊| 209/270 [00:04<00:01, 50.86it/s, loss=0.664, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+Epoch 7: 100%|█| 270/270 [00:05<00:00, 50.51it/s, loss=0.664, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_loclass 0: acc 0.0, correct 0/146
+class 1: acc 0.9596774193548387, correct 119/124███████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 84.61it/s]
+
+Epoch 8:  80%|▊| 216/270 [00:04<00:01, 51.17it/s, loss=0.662, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.370, val_lo
+class 1: acc 0.9621212121212122, correct 127/132███████████████████████████████████████████████████████████████| 54/54 [00:00<00:00, 96.21it/s]
+
+Epoch 9:  66%|▋| 179/270 [00:03<00:01, 50.33it/s, loss=0.659, v_num=he6t, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+Traceback (most recent call last):
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/resource_sharer.py", line 142, in _serve
+    with self._listener.accept() as conn:
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/connection.py", line 466, in accept
+    answer_challenge(c, self._authkey)
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/mvries/anaconda3/envs/dcc/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Testing: 0it [00:00, ?it/s]0:04<00:01, 51.92it/s, loss=0.648, v_num=he6t, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+test_BinaryAccuracy = 0.2945736348628998
+test_BinaryF1Score = 0.4484848380088806
+test_BinaryPrecision = 0.31896552443504333
+test_BinaryRecall = 0.7551020383834839
+auc = 0.40535712242126465
+val count 193
+class 0: acc 0.0051813471502590676, correct 1/193
+val count 152
+class 1: acc 0.8421052631578947, correct 128/152
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m      test_acc_epoch       [39m│[35m    0.2945736348628998     [39m│
+│[36m      test_loss_epoch      [39m│[35m    0.6587865352630615     [39m│
+└───────────────────────────┴───────────────────────────┘

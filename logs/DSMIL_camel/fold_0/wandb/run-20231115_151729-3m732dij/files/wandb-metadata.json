@@ -1,0 +1,159 @@
+{
+    "os": "Linux-6.2.0-35-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-11-15T15:17:29.766837",
+    "startedAt": "2023-11-15T15:17:29.036631",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_dsmil.py",
+    "codePath": "train_dsmil.py",
+    "host": "30247CMBDT",
+    "username": "mvries",
+    "executable": "/home/mvries/anaconda3/envs/dcc/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2530.077291666666,
+        "min": 1200.0,
+        "max": 4650.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1707.521,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2990.382,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2534.227,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4300.003,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1200.096,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1200.081,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.182,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4300.004,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1200.005,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1199.999,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2600.794,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4299.962,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2287.849,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3128.623,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2578.87,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4299.988,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1200.044,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1199.965,
+            "min": 1200.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2799.986,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4301.459,
+            "min": 1200.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1200.236,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1200.059,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2428.837,
+            "min": 1200.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4300.316,
+            "min": 1200.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "total": 937.3305015563965,
+        "used": 865.6678009033203
+    },
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.50212860107422
+    }
+}

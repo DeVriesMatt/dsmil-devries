@@ -1,0 +1,323 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name             | Type              | Params
+-------------------------------------------------------
+0 | criterion        | BCEWithLogitsLoss | 0
+1 | model            | MILNet            | 83.2 K
+2 | acc              | BinaryAccuracy    | 0
+3 | auc              | BinaryAUROC       | 0
+4 | F1               | BinaryF1Score     | 0
+5 | precision_metric | BinaryPrecision   | 0
+6 | recall           | BinaryRecall      | 0
+7 | train_metrics    | MetricCollection  | 0
+8 | valid_metrics    | MetricCollection  | 0
+9 | test_metrics     | MetricCollection  | 0
+-------------------------------------------------------
+83.2 K    Trainable params
+0         Non-trainable params
+83.2 K    Total params
+0.333     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "train_dsmil.py", line 189, in <module>
+    train(args)
+  File "train_dsmil.py", line 178, in train
+    print(f"Finished training model for drug: {args.drug_label}")
+AttributeError: 'Namespace' object has no attribute 'drug_label'
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Epoch 0:   0%|                                                                                                         | 0/270 [00:00<?, ?it/s]0
+0
+1
+0
+0
+1
+0
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+Epoch 0:   0%|▏                                                  | 1/270 [00:01<04:55,  1.10s/it, loss=0.762, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   1%|▍                                                  | 2/270 [00:01<02:32,  1.76it/s, loss=0.754, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:   1%|▌                                                  | 3/270 [00:01<01:42,  2.62it/s, loss=0.763, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   1%|▊                                                  | 4/270 [00:01<01:17,  3.44it/s, loss=0.759, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:   2%|▉                                                   | 5/270 [00:01<01:02,  4.21it/s, loss=0.76, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   2%|█▏                                                 | 6/270 [00:01<00:52,  4.99it/s, loss=0.755, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   3%|█▌                                                 | 8/270 [00:01<00:40,  6.46it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]1
+0
+Epoch 0:   3%|█▋                                                 | 9/270 [00:01<00:36,  7.19it/s, loss=0.752, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   4%|█▊                                                | 10/270 [00:01<00:32,  7.91it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   4%|██                                                | 11/270 [00:01<00:30,  8.63it/s, loss=0.755, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   4%|██▏                                               | 12/270 [00:01<00:27,  9.32it/s, loss=0.755, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   5%|██▍                                               | 13/270 [00:01<00:25, 10.00it/s, loss=0.756, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   5%|██▌                                               | 14/270 [00:01<00:24, 10.66it/s, loss=0.756, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   6%|██▊                                               | 15/270 [00:01<00:22, 11.26it/s, loss=0.756, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   6%|██▉                                               | 16/270 [00:01<00:21, 11.88it/s, loss=0.756, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   6%|███▏                                              | 17/270 [00:01<00:20, 12.49it/s, loss=0.756, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   7%|███▎                                              | 18/270 [00:01<00:19, 13.03it/s, loss=0.756, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   7%|███▌                                              | 19/270 [00:01<00:18, 13.57it/s, loss=0.755, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:   7%|███▋                                              | 20/270 [00:01<00:17, 14.07it/s, loss=0.755, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   8%|███▉                                              | 21/270 [00:01<00:17, 14.59it/s, loss=0.754, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   8%|████                                              | 22/270 [00:01<00:16, 15.14it/s, loss=0.754, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:   9%|████▎                                             | 23/270 [00:01<00:15, 15.63it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:   9%|████▍                                             | 24/270 [00:01<00:15, 16.11it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:   9%|████▋                                             | 25/270 [00:01<00:14, 16.65it/s, loss=0.752, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  10%|████▊                                             | 26/270 [00:01<00:14, 17.20it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  10%|█████▏                                            | 28/270 [00:01<00:13, 18.23it/s, loss=0.754, v_num=2dij, train_acc_step=0.000]0
+1
+Epoch 0:  11%|█████▎                                            | 29/270 [00:01<00:12, 18.64it/s, loss=0.753, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  11%|█████▌                                            | 30/270 [00:01<00:12, 19.14it/s, loss=0.753, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  11%|█████▋                                            | 31/270 [00:01<00:12, 19.57it/s, loss=0.751, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:  12%|█████▉                                            | 32/270 [00:01<00:11, 19.90it/s, loss=0.751, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  12%|██████                                            | 33/270 [00:01<00:11, 20.38it/s, loss=0.751, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  13%|██████▎                                           | 34/270 [00:01<00:11, 20.86it/s, loss=0.751, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  13%|██████▌                                            | 35/270 [00:01<00:11, 21.36it/s, loss=0.75, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  13%|██████▋                                           | 36/270 [00:01<00:10, 21.81it/s, loss=0.749, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  14%|██████▊                                           | 37/270 [00:01<00:10, 22.18it/s, loss=0.749, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  14%|███████                                           | 38/270 [00:01<00:10, 22.60it/s, loss=0.749, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  14%|███████▏                                          | 39/270 [00:01<00:10, 22.96it/s, loss=0.749, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  15%|███████▌                                          | 41/270 [00:01<00:09, 23.66it/s, loss=0.749, v_num=2dij, train_acc_step=0.000]1
+0
+Epoch 0:  16%|███████▉                                          | 43/270 [00:01<00:09, 24.38it/s, loss=0.756, v_num=2dij, train_acc_step=0.000]01
+Epoch 0:  17%|████████▎                                         | 45/270 [00:01<00:09, 24.94it/s, loss=0.755, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  17%|████████▌                                         | 46/270 [00:01<00:08, 25.20it/s, loss=0.754, v_num=2dij, train_acc_step=1.000]1
+1
+Epoch 0:  17%|████████▋                                         | 47/270 [00:01<00:08, 25.41it/s, loss=0.756, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:  18%|████████▉                                         | 48/270 [00:01<00:08, 25.80it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  18%|█████████                                         | 49/270 [00:01<00:08, 26.12it/s, loss=0.754, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  19%|█████████▎                                        | 50/270 [00:01<00:08, 26.40it/s, loss=0.755, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  19%|█████████▍                                        | 51/270 [00:01<00:08, 26.68it/s, loss=0.754, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  19%|█████████▋                                        | 52/270 [00:01<00:08, 27.00it/s, loss=0.754, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  20%|█████████▊                                        | 53/270 [00:01<00:07, 27.33it/s, loss=0.753, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  20%|██████████▏                                       | 55/270 [00:01<00:07, 27.83it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]1
+Epoch 0:  21%|██████████▎                                       | 56/270 [00:01<00:07, 28.08it/s, loss=0.753, v_num=2dij, train_acc_step=1.000]1
+0
+Epoch 0:  21%|██████████▌                                       | 57/270 [00:02<00:07, 28.29it/s, loss=0.753, v_num=2dij, train_acc_step=0.000]0
+Epoch 0:  22%|██████████▉                                       | 59/270 [00:02<00:07, 28.71it/s, loss=0.751, v_num=2dij, train_acc_step=0.000]0
+1
+Epoch 0:  22%|███████████                                       | 60/270 [00:02<00:07, 28.91it/s, loss=0.751, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:  23%|███████████▎                                      | 61/270 [00:02<00:07, 28.82it/s, loss=0.751, v_num=2dij, train_acc_step=1.000]0
+Epoch 0:  23%|███████████▍                                      | 62/270 [00:02<00:07, 28.98it/s, loss=0.751, v_num=2dij, train_acc_step=1.000]1
+Epoch 0:  23%|███████████▋                                      | 63/270 [00:02<00:07, 29.11it/s, loss=0.751, v_num=2dij, train_acc_step=1.000]

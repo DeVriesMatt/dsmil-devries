@@ -1,0 +1,82 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.6
+    framework: xgboost
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: train_acc_step
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.13
+    start_time: 1700061511.593036
+    t:
+      1:
+      - 1
+      - 5
+      - 6
+      - 9
+      - 41
+      - 49
+      - 51
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 6
+      - 9
+      - 41
+      - 49
+      - 51
+      - 53
+      - 55
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.8.13
+      5: 0.13.6
+      8:
+      - 2
+      - 5
+i_class:
+  desc: null
+  value: i_class
+log_dir:
+  desc: null
+  value: ./logs
+max_epochs:
+  desc: null
+  value: 250
+model_type:
+  desc: null
+  value: TransABMIL
+num_classes:
+  desc: null
+  value: 2
+output_class:
+  desc: null
+  value: 1
+prob_transform:
+  desc: null
+  value: 0.5

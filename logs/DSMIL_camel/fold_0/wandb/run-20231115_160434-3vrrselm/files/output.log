@@ -1,0 +1,645 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name             | Type              | Params
+-------------------------------------------------------
+0 | criterion        | BCEWithLogitsLoss | 0
+1 | model            | MILNet            | 83.2 K
+2 | acc              | BinaryAccuracy    | 0
+3 | auc              | BinaryAUROC       | 0
+4 | F1               | BinaryF1Score     | 0
+5 | precision_metric | BinaryPrecision   | 0
+6 | recall           | BinaryRecall      | 0
+7 | train_metrics    | MetricCollection  | 0
+8 | valid_metrics    | MetricCollection  | 0
+9 | test_metrics     | MetricCollection  | 0
+-------------------------------------------------------
+83.2 K    Trainable params
+0         Non-trainable params
+83.2 K    Total params
+0.333     Total estimated model params size (MB)
+
+
+
+Epoch 0:  80%|███████████████████████████████████████▏         | 216/270 [00:09<00:02, 23.75it/s, loss=0.721, v_num=selm, train_acc_step=0.000]
+class 1: acc 1.0, correct 128/128██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.53it/s]
+Epoch 1:   2%| | 6/270 [00:00<00:34,  7.76it/s, loss=0.722, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.407, val_loss
+
+
+
+Epoch 1:  88%|▉| 237/270 [00:08<00:01, 27.67it/s, loss=0.698, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+Validation DataLoader 0:  39%|███████████████████████████████▌                                                 | 21/54 [00:00<00:00, 50.17it/s]
+class 1: acc 1.0, correct 135/135██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.00it/s]
+
+
+Epoch 2:  81%|▊| 218/270 [00:07<00:01, 29.10it/s, loss=0.681, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+class 1: acc 0.9916666666666667, correct 119/120███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.51it/s]
+Epoch 3:   3%| | 7/270 [00:00<00:32,  7.97it/s, loss=0.683, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.389, val_loss
+
+
+Epoch 3:  80%|▊| 216/270 [00:06<00:01, 32.23it/s, loss=0.687, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+class 1: acc 0.9761904761904762, correct 123/126███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.27it/s]
+Epoch 4:   0%| | 0/270 [00:00<?, ?it/s, loss=0.687, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.370, val_loss=0.705,
+
+
+
+Epoch 4:  93%|▉| 252/270 [00:08<00:00, 30.44it/s, loss=0.68, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.370, val_los
+class 1: acc 1.0, correct 143/143██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.36it/s]
+
+
+Epoch 5:  89%|▉| 239/270 [00:07<00:01, 30.50it/s, loss=0.692, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+class 1: acc 1.0, correct 134/134██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.78it/s]
+
+
+Epoch 6:  80%|▊| 216/270 [00:06<00:01, 32.32it/s, loss=0.666, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.407, val_lo
+class 1: acc 1.0, correct 138/138██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.27it/s]
+
+
+
+Epoch 7: 100%|█| 270/270 [00:08<00:00, 32.12it/s, loss=0.67, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_losclass 0: acc 0.0, correct 0/146
+class 1: acc 0.9758064516129032, correct 121/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.64it/s]
+Epoch 8:   0%| | 0/270 [00:00<?, ?it/s, loss=0.67, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.389, val_loss=0.699, a
+
+
+
+Epoch 8:  97%|▉| 261/270 [00:08<00:00, 31.18it/s, loss=0.673, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+class 1: acc 0.9772727272727273, correct 129/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.40it/s]
+
+
+Epoch 9:  86%|▊| 232/270 [00:07<00:01, 30.64it/s, loss=0.659, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_lo
+class 1: acc 0.856, correct 107/125████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.06it/s]
+Epoch 10:   8%| | 22/270 [00:01<00:13, 17.91it/s, loss=0.668, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.296, val_lo
+
+
+Epoch 10:  81%|▊| 218/270 [00:07<00:01, 29.43it/s, loss=0.652, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.296, val_l
+class 1: acc 0.08527131782945736, correct 11/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.74it/s]
+Epoch 11:   0%| | 0/270 [00:00<?, ?it/s, loss=0.652, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.389, val_loss=0.694,
+
+
+
+Epoch 11:  97%|▉| 263/270 [00:08<00:00, 30.11it/s, loss=0.669, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.389, val_l
+class 1: acc 0.553030303030303, correct 73/132█████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.94it/s]
+
+
+Epoch 12:  89%|▉| 239/270 [00:07<00:00, 31.22it/s, loss=0.659, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.370, val_l
+class 1: acc 0.9925925925925926, correct 134/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.00it/s]
+
+
+Epoch 13:  85%|▊| 229/270 [00:07<00:01, 30.33it/s, loss=0.657, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.389, val_l
+class 1: acc 0.6774193548387096, correct 84/124████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.38it/s]
+Epoch 14:   8%| | 21/270 [00:01<00:13, 17.98it/s, loss=0.648, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.352, val_lo
+
+
+Epoch 14:  80%|▊| 216/270 [00:06<00:01, 33.34it/s, loss=0.664, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.352, val_l
+class 1: acc 0.007936507936507936, correct 1/126███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.94it/s]
+Epoch 15:   1%| | 3/270 [00:00<00:58,  4.54it/s, loss=0.672, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_los
+
+
+Epoch 15:  80%|▊| 216/270 [00:06<00:01, 32.83it/s, loss=0.647, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.7248322147651006, correct 108/149███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.88it/s]
+
+
+
+Epoch 16:  99%|▉| 267/270 [00:08<00:00, 31.97it/s, loss=0.668, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.407, val_l
+class 1: acc 1.0, correct 128/128██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.15it/s]
+
+
+Epoch 17:  98%|▉| 265/270 [00:08<00:00, 32.55it/s, loss=0.643, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.407, val_l
+class 1: acc 0.8629032258064516, correct 107/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.83it/s]
+
+
+Epoch 18:  84%|▊| 228/270 [00:07<00:01, 29.98it/s, loss=0.646, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.519, val_l
+class 1: acc 0.0, correct 0/112████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.70it/s]
+Epoch 19:   7%| | 20/270 [00:01<00:14, 17.18it/s, loss=0.663, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_lo
+
+
+Epoch 19:  80%|▊| 216/270 [00:06<00:01, 31.81it/s, loss=0.642, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.0, correct 0/136████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.02it/s]
+
+
+
+Epoch 20: 100%|█| 270/270 [00:08<00:00, 32.45it/s, loss=0.642, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_lclass 0: acc 0.644927536231884, correct 89/138
+class 1: acc 0.2803030303030303, correct 37/132████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.43it/s]
+
+
+
+Epoch 21: 100%|▉| 269/270 [00:08<00:00, 31.32it/s, loss=0.639, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_l
+class 1: acc 0.9583333333333334, correct 138/144███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.69it/s]
+
+
+Epoch 22:  91%|▉| 247/270 [00:07<00:00, 31.72it/s, loss=0.642, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_l
+class 1: acc 1.0, correct 131/131██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.74it/s]
+
+
+Epoch 23:  87%|▊| 234/270 [00:07<00:01, 31.05it/s, loss=0.635, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.407, val_l
+class 1: acc 0.2980769230769231, correct 31/104████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.60it/s]
+Epoch 24:   3%| | 7/270 [00:00<00:31,  8.39it/s, loss=0.625, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.593, val_los
+
+
+Epoch 24:  80%|▊| 216/270 [00:06<00:01, 32.90it/s, loss=0.608, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.0, correct 0/125████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.54it/s]
+
+
+
+Epoch 25:  99%|▉| 266/270 [00:08<00:00, 30.77it/s, loss=0.651, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+Validation DataLoader 0:  93%|███████████████████████████████████████████████████████████████████████████      | 50/54 [00:01<00:00, 49.23it/s]
+class 1: acc 0.0, correct 0/119████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.85it/s]
+
+
+Epoch 26:  93%|▉| 252/270 [00:08<00:00, 30.78it/s, loss=0.648, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.0, correct 0/119████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.74it/s]
+Epoch 27:  15%|▏| 41/270 [00:01<00:09, 24.96it/s, loss=0.667, v_num=selm, train_acc_step=0.000, val_acc_step=0.000, val_acc_epoch=0.593, val_lo
+
+
+Epoch 27:  86%|▊| 231/270 [00:07<00:01, 31.16it/s, loss=0.647, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.0, correct 0/130████████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.29it/s]
+
+
+Epoch 28:  84%|▊| 228/270 [00:07<00:01, 30.70it/s, loss=0.663, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.007692307692307693, correct 1/130███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.80it/s]
+
+
+Epoch 29:  80%|▊| 216/270 [00:06<00:01, 32.74it/s, loss=0.641, v_num=selm, train_acc_step=1.000, val_acc_step=0.000, val_acc_epoch=0.593, val_l
+class 1: acc 0.5307692307692308, correct 69/130████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.63it/s]
+Epoch 30:   0%| | 0/270 [00:00<?, ?it/s, loss=0.641, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_loss=0.663,
+
+
+
+Epoch 30: 100%|█| 270/270 [00:08<00:00, 32.31it/s, loss=0.605, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lclass 0: acc 0.9153846153846154, correct 119/130
+class 1: acc 0.8571428571428571, correct 120/140███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.79it/s]
+Epoch 30: 100%|█| 270/270 [00:08<00:00, 32.28it/s, loss=0.605, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.889, val_l
+
+
+
+Epoch 31:  95%|▉| 256/270 [00:08<00:00, 30.84it/s, loss=0.625, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.889, val_l
+Validation DataLoader 0:  74%|████████████████████████████████████████████████████████████                     | 40/54 [00:00<00:00, 46.68it/s]
+class 1: acc 0.9136690647482014, correct 127/139███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.69it/s]
+
+
+Epoch 32:  80%|▊| 216/270 [00:06<00:01, 31.87it/s, loss=0.545, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.852, val_l
+class 1: acc 0.8907563025210085, correct 106/119███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.03it/s]
+Epoch 33:   1%| | 2/270 [00:00<01:31,  2.94it/s, loss=0.552, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_los
+
+
+Epoch 33:  80%|▊| 216/270 [00:06<00:01, 31.73it/s, loss=0.568, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.7883211678832117, correct 108/137███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.80it/s]
+Epoch 34:   0%| | 1/270 [00:00<02:27,  1.82it/s, loss=0.564, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_los
+
+
+
+Epoch 34:  98%|▉| 265/270 [00:08<00:00, 31.75it/s, loss=0.569, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  93%|███████████████████████████████████████████████████████████████████████████      | 50/54 [00:01<00:00, 49.03it/s]
+class 1: acc 0.8625954198473282, correct 113/131███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.53it/s]
+
+
+Epoch 35:  84%|▊| 227/270 [00:07<00:01, 29.66it/s, loss=0.554, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.907, val_l
+class 1: acc 0.8897058823529411, correct 121/136███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.94it/s]
+Epoch 36:   6%| | 16/270 [00:01<00:17, 14.71it/s, loss=0.531, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+Epoch 36:  80%|▊| 216/270 [00:06<00:01, 32.18it/s, loss=0.494, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8264462809917356, correct 100/121███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.45it/s]
+Epoch 37:   6%| | 15/270 [00:00<00:15, 16.99it/s, loss=0.514, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+
+Epoch 37: 100%|█| 270/270 [00:08<00:00, 32.15it/s, loss=0.535, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.9333333333333333, correct 126/135
+class 1: acc 0.8666666666666667, correct 117/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.55it/s]
+Epoch 38:   0%| | 0/270 [00:00<?, ?it/s, loss=0.535, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.499,
+
+
+
+Epoch 38:  97%|▉| 263/270 [00:08<00:00, 30.90it/s, loss=0.522, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  89%|████████████████████████████████████████████████████████████████████████         | 48/54 [00:00<00:00, 49.95it/s]
+class 1: acc 0.8346456692913385, correct 106/127███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.48it/s]
+
+
+Epoch 39:  86%|▊| 233/270 [00:07<00:01, 30.76it/s, loss=0.481, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.8333333333333334, correct 110/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.07it/s]
+Epoch 40:   8%| | 21/270 [00:01<00:14, 16.81it/s, loss=0.533, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lo
+
+
+Epoch 40:  83%|▊| 225/270 [00:07<00:01, 30.07it/s, loss=0.446, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.890625, correct 114/128█████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.10it/s]
+Epoch 41:   6%| | 16/270 [00:01<00:16, 15.63it/s, loss=0.553, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+
+Epoch 41: 100%|█| 270/270 [00:08<00:00, 31.17it/s, loss=0.515, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.9361702127659575, correct 132/141
+class 1: acc 0.8527131782945736, correct 110/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.79it/s]
+Epoch 42:   0%| | 0/270 [00:00<?, ?it/s, loss=0.515, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.433,
+
+
+
+Epoch 42:  93%|▉| 250/270 [00:08<00:00, 29.88it/s, loss=0.548, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.823943661971831, correct 117/142████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.47it/s]
+
+
+Epoch 43:  80%|▊| 216/270 [00:06<00:01, 32.09it/s, loss=0.472, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_l
+class 1: acc 0.8813559322033898, correct 104/118███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.15it/s]
+Epoch 44:   3%| | 8/270 [00:00<00:28,  9.29it/s, loss=0.53, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.944, val_loss
+
+
+
+Epoch 44: 100%|█| 270/270 [00:08<00:00, 32.49it/s, loss=0.415, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lclass 0: acc 0.9533333333333334, correct 143/150
+class 1: acc 0.875, correct 105/120████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.25it/s]
+Epoch 45:   0%| | 0/270 [00:00<?, ?it/s, loss=0.415, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_loss=0.388,
+
+
+
+Epoch 45: 100%|█| 270/270 [00:08<00:00, 31.81it/s, loss=0.575, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lclass 0: acc 0.9586206896551724, correct 139/145
+class 1: acc 0.816, correct 102/125████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.35it/s]
+Epoch 46:   0%| | 0/270 [00:00<?, ?it/s, loss=0.575, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.382,
+
+
+
+Epoch 46:  94%|▉| 254/270 [00:07<00:00, 32.37it/s, loss=0.433, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  70%|█████████████████████████████████████████████████████████                        | 38/54 [00:00<00:00, 47.29it/s]
+class 1: acc 0.8407079646017699, correct 95/113████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.06it/s]
+
+
+Epoch 47:  88%|▉| 238/270 [00:07<00:01, 30.34it/s, loss=0.478, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.88, correct 110/125█████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.28it/s]
+
+
+Epoch 48:  80%|▊| 216/270 [00:06<00:01, 32.34it/s, loss=0.407, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_l
+class 1: acc 0.9140625, correct 117/128████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.39it/s]
+Epoch 49:   0%| | 1/270 [00:00<02:36,  1.72it/s, loss=0.415, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_los
+
+
+Epoch 49: 100%|█| 270/270 [00:08<00:00, 31.82it/s, loss=0.446, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.958904109589041, correct 140/146
+class 1: acc 0.8790322580645161, correct 109/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.85it/s]
+Epoch 50:   0%| | 0/270 [00:00<?, ?it/s, loss=0.446, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_loss=0.339,
+
+
+
+Epoch 50:  97%|▉| 262/270 [00:08<00:00, 32.28it/s, loss=0.344, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+Validation DataLoader 0:  87%|██████████████████████████████████████████████████████████████████████▌          | 47/54 [00:00<00:00, 49.38it/s]
+class 1: acc 0.8666666666666667, correct 104/120███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.11it/s]
+
+
+Epoch 51:  98%|▉| 264/270 [00:08<00:00, 32.36it/s, loss=0.418, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8623188405797102, correct 119/138███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.12it/s]
+
+
+Epoch 52:  86%|▊| 233/270 [00:07<00:01, 30.70it/s, loss=0.411, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8780487804878049, correct 108/123███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.55it/s]
+Epoch 53:   9%| | 25/270 [00:01<00:12, 19.68it/s, loss=0.421, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+Epoch 53:  87%|▊| 235/270 [00:07<00:01, 31.30it/s, loss=0.523, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8461538461538461, correct 110/130███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.77it/s]
+Epoch 54:   9%| | 23/270 [00:01<00:13, 17.96it/s, loss=0.456, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+Epoch 54:  80%|▊| 216/270 [00:06<00:01, 31.81it/s, loss=0.607, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8636363636363636, correct 114/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.89it/s]
+Epoch 55:   0%| | 0/270 [00:00<?, ?it/s, loss=0.607, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.313,
+
+
+
+Epoch 55:  95%|▉| 256/270 [00:08<00:00, 29.98it/s, loss=0.383, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.900709219858156, correct 127/141████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.65it/s]
+
+
+Epoch 56:  89%|▉| 239/270 [00:07<00:00, 31.54it/s, loss=0.395, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_l
+class 1: acc 0.8709677419354839, correct 108/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.07it/s]
+Epoch 57:   0%| | 0/270 [00:00<?, ?it/s, loss=0.395, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.306,
+
+
+Epoch 57:  80%|▊| 216/270 [00:06<00:01, 31.48it/s, loss=0.513, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8629032258064516, correct 107/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.86it/s]
+Epoch 58:   0%| | 0/270 [00:00<?, ?it/s, loss=0.513, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.295,
+
+
+
+Epoch 58:  94%|▉| 254/270 [00:08<00:00, 30.78it/s, loss=0.436, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.875968992248062, correct 113/129████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.27it/s]
+
+
+Epoch 59:  93%|▉| 250/270 [00:08<00:00, 31.08it/s, loss=0.387, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.8592592592592593, correct 116/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.36it/s]
+
+
+Epoch 60:  80%|▊| 216/270 [00:06<00:01, 31.19it/s, loss=0.387, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.853448275862069, correct 99/116█████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.28it/s]
+Epoch 61:   7%| | 18/270 [00:01<00:15, 16.37it/s, loss=0.356, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lo
+
+
+Epoch 61:  80%|▊| 216/270 [00:06<00:01, 32.08it/s, loss=0.353, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.9047619047619048, correct 114/126███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.82it/s]
+Epoch 62:   0%| | 0/270 [00:00<?, ?it/s, loss=0.353, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.281,
+
+
+
+Epoch 62:  94%|▉| 254/270 [00:08<00:00, 31.22it/s, loss=0.44, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+class 1: acc 0.8642857142857143, correct 121/140███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.98it/s]
+
+
+Epoch 63:  90%|▉| 243/270 [00:07<00:00, 30.98it/s, loss=0.426, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8540145985401459, correct 117/137███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.74it/s]
+
+
+Epoch 64:  84%|▊| 227/270 [00:07<00:01, 29.40it/s, loss=0.306, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_l
+class 1: acc 0.8898305084745762, correct 105/118███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.20it/s]
+Epoch 65:   1%| | 2/270 [00:00<01:19,  3.37it/s, loss=0.288, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_los
+
+
+Epoch 65:  80%|▊| 216/270 [00:06<00:01, 33.16it/s, loss=0.438, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8823529411764706, correct 120/136███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.54it/s]
+Epoch 66:   0%| | 1/270 [00:00<02:36,  1.72it/s, loss=0.438, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_los
+
+
+
+Epoch 66: 100%|▉| 269/270 [00:08<00:00, 32.34it/s, loss=0.329, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  98%|███████████████████████████████████████████████████████████████████████████████▌ | 53/54 [00:01<00:00, 48.66it/s]
+class 1: acc 0.8976377952755905, correct 114/127███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.62it/s]
+
+
+Epoch 67:  91%|▉| 245/270 [00:08<00:00, 29.92it/s, loss=0.423, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.890625, correct 114/128█████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.92it/s]
+Epoch 68:  13%|▏| 34/270 [00:01<00:10, 22.05it/s, loss=0.378, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+Epoch 68:  80%|▊| 216/270 [00:06<00:01, 32.65it/s, loss=0.421, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.803030303030303, correct 106/132████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.28it/s]
+
+
+Epoch 69:  80%|▊| 216/270 [00:06<00:01, 32.28it/s, loss=0.319, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8114754098360656, correct 99/122████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.94it/s]
+Epoch 70:   2%| | 6/270 [00:00<00:32,  8.24it/s, loss=0.343, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_los
+
+
+
+Epoch 70: 100%|█| 270/270 [00:08<00:00, 32.99it/s, loss=0.485, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lclass 0: acc 0.961038961038961, correct 148/154
+class 1: acc 0.8362068965517241, correct 97/116████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.52it/s]
+Epoch 71:   0%| | 0/270 [00:00<?, ?it/s, loss=0.485, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_loss=0.257,
+
+
+Epoch 71:  80%|▊| 216/270 [00:06<00:01, 33.71it/s, loss=0.442, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+
+class 1: acc 0.8880597014925373, correct 119/134███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.15it/s]
+
+
+Epoch 72:  99%|▉| 267/270 [00:08<00:00, 32.44it/s, loss=0.376, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  94%|████████████████████████████████████████████████████████████████████████████▌    | 51/54 [00:01<00:00, 48.38it/s]
+class 1: acc 0.8549618320610687, correct 112/131███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.57it/s]
+
+
+Epoch 73:  94%|▉| 253/270 [00:07<00:00, 32.89it/s, loss=0.312, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.9139072847682119, correct 138/151███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.96it/s]
+
+
+Epoch 74:  92%|▉| 248/270 [00:07<00:00, 31.33it/s, loss=0.338, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.875, correct 112/128████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.34it/s]
+Epoch 75:  14%|▏| 38/270 [00:01<00:09, 24.03it/s, loss=0.376, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+
+
+Epoch 75:  85%|▊| 230/270 [00:07<00:01, 31.58it/s, loss=0.381, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8625954198473282, correct 113/131███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.93it/s]
+Epoch 76:   7%| | 19/270 [00:01<00:15, 15.84it/s, loss=0.396, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lo
+
+
+Epoch 76:  80%|▊| 216/270 [00:06<00:01, 31.33it/s, loss=0.365, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.8805970149253731, correct 118/134███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.44it/s]
+
+
+
+Epoch 77:  97%|▉| 263/270 [00:08<00:00, 30.35it/s, loss=0.42, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+Validation DataLoader 0:  87%|██████████████████████████████████████████████████████████████████████▌          | 47/54 [00:00<00:00, 48.39it/s]
+class 1: acc 0.9016393442622951, correct 110/122███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.32it/s]
+
+
+Epoch 78:  97%|▉| 262/270 [00:08<00:00, 32.47it/s, loss=0.323, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8421052631578947, correct 112/133███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.01it/s]
+
+
+Epoch 79:  80%|▊| 216/270 [00:06<00:01, 30.99it/s, loss=0.365, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.910958904109589, correct 133/146████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.89it/s]
+
+
+Epoch 80:  80%|▊| 216/270 [00:06<00:01, 32.11it/s, loss=0.284, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.9253731343283582, correct 124/134███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.08it/s]
+
+
+
+Epoch 81: 100%|█| 270/270 [00:08<00:00, 33.28it/s, loss=0.251, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.9590163934426229, correct 117/122
+class 1: acc 0.9054054054054054, correct 134/148███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.11it/s]
+
+
+
+Epoch 82:  94%|▉| 253/270 [00:08<00:00, 31.39it/s, loss=0.454, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.8814814814814815, correct 119/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.78it/s]
+
+
+Epoch 83:  86%|▊| 232/270 [00:07<00:01, 29.83it/s, loss=0.317, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  30%|████████████████████████                                                         | 16/54 [00:00<00:00, 63.47it/s]
+class 1: acc 0.9105691056910569, correct 112/123███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.12it/s]
+
+
+Epoch 84:  80%|▊| 216/270 [00:06<00:01, 33.04it/s, loss=0.332, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8740740740740741, correct 118/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.29it/s]
+
+
+Epoch 85:  80%|▊| 216/270 [00:06<00:01, 31.85it/s, loss=0.318, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.9069767441860465, correct 117/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.22it/s]
+
+
+
+Epoch 86:  78%|▊| 211/270 [00:06<00:01, 34.75it/s, loss=0.393, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Epoch 86: 100%|█| 270/270 [00:07<00:00, 33.89it/s, loss=0.411, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.9444444444444444, correct 136/144
+class 1: acc 0.8968253968253969, correct 113/126███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.69it/s]
+
+
+
+Epoch 87:  94%|▉| 255/270 [00:08<00:00, 30.19it/s, loss=0.293, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8854961832061069, correct 116/131███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.27it/s]
+
+
+Epoch 88:  88%|▉| 238/270 [00:07<00:00, 32.00it/s, loss=0.382, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.8785714285714286, correct 123/140███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.22it/s]
+
+
+Epoch 89:  90%|▉| 243/270 [00:07<00:00, 31.86it/s, loss=0.317, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_l
+class 1: acc 0.8863636363636364, correct 117/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.65it/s]
+
+
+Epoch 90:  80%|▊| 216/270 [00:06<00:01, 31.82it/s, loss=0.346, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation: 0it [00:00, ?it/s]
+class 1: acc 0.8790322580645161, correct 109/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.42it/s]
+
+
+
+Epoch 91: 100%|█| 270/270 [00:08<00:00, 32.12it/s, loss=0.501, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.927007299270073, correct 127/137
+class 1: acc 0.9172932330827067, correct 122/133███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.70it/s]
+
+
+
+Epoch 92:  98%|▉| 265/270 [00:08<00:00, 31.98it/s, loss=0.33, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+class 1: acc 0.9224806201550387, correct 119/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.80it/s]
+
+
+Epoch 93:  86%|▊| 231/270 [00:07<00:01, 30.13it/s, loss=0.391, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  28%|██████████████████████▌                                                          | 15/54 [00:00<00:00, 58.91it/s]
+class 1: acc 0.8780487804878049, correct 108/123███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.16it/s]
+
+
+Epoch 94:  82%|▊| 221/270 [00:07<00:01, 29.68it/s, loss=0.418, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:   9%|███████▌                                                                          | 5/54 [00:00<00:00, 82.69it/s]
+class 1: acc 0.8403361344537815, correct 100/119███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 47.78it/s]
+
+
+
+Epoch 95: 100%|█| 270/270 [00:08<00:00, 31.97it/s, loss=0.417, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lclass 0: acc 0.9701492537313433, correct 130/134
+class 1: acc 0.8970588235294118, correct 122/136███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.16it/s]
+
+
+
+Epoch 96:  97%|▉| 261/270 [00:08<00:00, 30.42it/s, loss=0.331, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.9264705882352942, correct 126/136███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.01it/s]
+
+
+Epoch 97:  80%|▊| 216/270 [00:06<00:01, 31.33it/s, loss=0.37, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+class 1: acc 0.8405797101449275, correct 116/138███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.46it/s]
+
+
+Epoch 98:  80%|▊| 216/270 [00:06<00:01, 31.22it/s, loss=0.312, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_l
+class 1: acc 0.8872180451127819, correct 118/133███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.73it/s]
+
+
+
+Epoch 99:  98%|▉| 264/270 [00:08<00:00, 32.10it/s, loss=0.324, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+class 1: acc 0.9104477611940298, correct 122/134███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.95it/s]
+
+
+Epoch 100:  91%|▉| 246/270 [00:07<00:00, 31.80it/s, loss=0.249, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.9069767441860465, correct 117/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.24it/s]
+
+
+Epoch 101:  80%|▊| 216/270 [00:06<00:01, 31.13it/s, loss=0.316, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.916030534351145, correct 120/131████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.66it/s]
+
+
+
+Epoch 102:  76%|▊| 205/270 [00:06<00:02, 31.06it/s, loss=0.337, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_
+Epoch 102:  99%|▉| 267/270 [00:08<00:00, 30.94it/s, loss=0.269, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.926, val_
+class 1: acc 0.8547008547008547, correct 100/117███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.29it/s]
+
+
+Epoch 103:  93%|▉| 250/270 [00:08<00:00, 30.75it/s, loss=0.33, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_l
+Validation DataLoader 0:  63%|███████████████████████████████████████████████████                              | 34/54 [00:00<00:00, 50.89it/s]
+class 1: acc 0.8661417322834646, correct 110/127███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.13it/s]
+
+
+Epoch 104:  88%|▉| 238/270 [00:07<00:00, 32.41it/s, loss=0.258, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_
+class 1: acc 0.9032258064516129, correct 112/124███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.99it/s]
+
+
+Epoch 105:  84%|▊| 227/270 [00:07<00:01, 30.05it/s, loss=0.376, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.9318181818181818, correct 123/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.05it/s]
+
+
+
+Epoch 106: 100%|█| 270/270 [00:08<00:00, 31.41it/s, loss=0.316, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_class 0: acc 0.9428571428571428, correct 132/140
+class 1: acc 0.9, correct 117/130██████████████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.07it/s]
+
+
+
+Epoch 107:  93%|▉| 252/270 [00:08<00:00, 31.24it/s, loss=0.322, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8873239436619719, correct 126/142███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.24it/s]
+
+
+Epoch 108:  87%|▊| 236/270 [00:07<00:01, 30.14it/s, loss=0.296, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_
+Validation DataLoader 0:  37%|██████████████████████████████                                                   | 20/54 [00:00<00:00, 54.20it/s]
+class 1: acc 0.9465648854961832, correct 124/131███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.05it/s]
+
+
+Epoch 109:  80%|▊| 216/270 [00:06<00:01, 33.25it/s, loss=0.235, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.9111111111111111, correct 123/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.82it/s]
+
+
+Epoch 110:  80%|▊| 216/270 [00:06<00:01, 31.91it/s, loss=0.267, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8740740740740741, correct 118/135███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.99it/s]
+
+
+
+Epoch 111: 100%|█| 270/270 [00:08<00:00, 32.31it/s, loss=0.42, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_lclass 0: acc 0.9214285714285714, correct 129/140
+class 1: acc 0.8846153846153846, correct 115/130███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.83it/s]
+
+
+
+Epoch 112:  87%|▊| 234/270 [00:07<00:01, 29.44it/s, loss=0.335, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.9166666666666666, correct 110/120███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 45.76it/s]
+
+
+Epoch 113:  80%|▊| 216/270 [00:06<00:01, 31.55it/s, loss=0.452, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8943089430894309, correct 110/123███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 46.62it/s]
+
+
+
+Epoch 114:  98%|▉| 265/270 [00:08<00:00, 31.20it/s, loss=0.355, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+Validation DataLoader 0:  91%|█████████████████████████████████████████████████████████████████████████▌       | 49/54 [00:00<00:00, 50.44it/s]
+class 1: acc 0.9153846153846154, correct 119/130███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.27it/s]
+
+
+Epoch 115:  97%|▉| 262/270 [00:08<00:00, 32.17it/s, loss=0.5, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_lo
+class 1: acc 0.8582089552238806, correct 115/134███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.31it/s]
+
+
+Epoch 116:  82%|▊| 222/270 [00:07<00:01, 29.33it/s, loss=0.317, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8495575221238938, correct 96/113████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.23it/s]
+
+
+Epoch 117:  85%|▊| 229/270 [00:07<00:01, 31.51it/s, loss=0.407, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.7928571428571428, correct 111/140███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.26it/s]
+
+
+Epoch 118:  80%|▊| 216/270 [00:06<00:01, 32.94it/s, loss=0.451, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_
+class 1: acc 0.8412698412698413, correct 106/126███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.06it/s]
+
+
+Epoch 119:  80%|▊| 216/270 [00:06<00:01, 34.37it/s, loss=0.358, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8992248062015504, correct 116/129███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.64it/s]
+
+
+
+Epoch 120: 100%|█| 270/270 [00:08<00:00, 31.90it/s, loss=0.328, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_class 0: acc 0.9432624113475178, correct 133/141
+class 1: acc 0.875968992248062, correct 113/129████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 50.49it/s]
+
+
+
+Epoch 121:  98%|▉| 265/270 [00:08<00:00, 31.48it/s, loss=0.348, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8686131386861314, correct 119/137███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 48.90it/s]
+
+
+Epoch 122:  87%|▊| 236/270 [00:07<00:01, 30.88it/s, loss=0.344, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_
+class 1: acc 0.8934426229508197, correct 109/122███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.50it/s]
+
+
+Epoch 123:  80%|▊| 216/270 [00:06<00:01, 31.18it/s, loss=0.232, v_num=selm, train_acc_step=1.000, val_acc_step=1.000, val_acc_epoch=0.944, val_
+class 1: acc 0.860655737704918, correct 105/122████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 49.30it/s]
+
+
+Epoch 124:  80%|▊| 216/270 [00:06<00:01, 32.85it/s, loss=0.331, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+class 1: acc 0.8409090909090909, correct 111/132███████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 51.14it/s]
+Epoch 124: 100%|█| 270/270 [00:08<00:00, 32.39it/s, loss=0.331, v_num=selm, train_acc_step=0.000, val_acc_step=1.000, val_acc_epoch=0.963, val_
+Monitored metric val_loss did not improve in the last 10 records. Best score: 0.211. Signaling Trainer to stop.
+Testing DataLoader 0: 100%|██████████████████████████████████████████████████████████████████████████████████| 129/129 [00:03<00:00, 39.31it/s]
+test_BinaryAccuracy = 0.930232584476471
+test_BinaryF1Score = 0.9052631855010986
+test_BinaryPrecision = 0.9347826242446899
+test_BinaryRecall = 0.8775510191917419
+auc = 0.9721938371658325
+val count 80
+class 0: acc 0.9625, correct 77/80
+val count 49
+class 1: acc 0.8775510204081632, correct 43/49
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m      test_acc_epoch       [39m│[35m     0.930232584476471     [39m│
+│[36m      test_loss_epoch      [39m│[35m    0.3029407262802124     [39m│
+└───────────────────────────┴───────────────────────────┘
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
